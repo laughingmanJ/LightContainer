@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
 
 namespace LightContainer.Interfaces
 {
     public interface IApplicationContext
     {
-        IIocContainer GetContainer();
+        IIocContainer BuildContainer();
 
         void Load(params IInjectionModule[] modules);
 

@@ -1,5 +1,6 @@
 ﻿using LightContainer.Interfaces;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -12,7 +13,7 @@ namespace LightContainer.Core
 
         private readonly static TypeInfo _moduleInterfaceInfo = typeof(IInjectionModule).GetTypeInfo();
 
-        private readonly IIocContainerInternal _container;
+        private readonly IList<IInjectionModule> _modules;
 
         #endregion
 
@@ -23,16 +24,22 @@ namespace LightContainer.Core
         /// </summary>
         public ApplicationContext()
         {
-            _container = new IocContainer();
+            _modules = new List<IInjectionModule>();
         }
 
         #endregion
 
         #region IApplicationContext Methods
 
-        public IIocContainer GetContainer()
+        public IIocContainer BuildContainer()
         {
-            return _container;
+            IIocContainerInternal container = new IocContainer();
+
+            foreach (var module in _modules)
+            {
+                module.Load(container);
+            }
+            return container;
         }
 
         public void Load(string searchPattern)
@@ -60,7 +67,7 @@ namespace LightContainer.Core
         {
             foreach (var module in modules)
             {
-                module.Load(_container);
+                _modules.Add(module);
             }
         }
 

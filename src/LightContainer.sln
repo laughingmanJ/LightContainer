@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.4
+VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightContainer", "LightContainer\LightContainer.csproj", "{895BF71D-5E11-4FCE-8EDD-D9DCA107F373}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LightContainer", "LightContainer\LightContainer.csproj", "{895BF71D-5E11-4FCE-8EDD-D9DCA107F373}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestLightContainer", "UnitTestLightContainer\UnitTestLightContainer.csproj", "{5B45483D-DBF9-4D7B-BC6B-996118DDEDA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OldTestLightContainer", "UnitTestLightContainer\OldTestLightContainer.csproj", "{5B45483D-DBF9-4D7B-BC6B-996118DDEDA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLightContainer", "TestLightContainer\TestLightContainer.csproj", "{93E7C598-6EF2-484D-859F-0D20D001A02B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,8 +43,23 @@ Global
 		{5B45483D-DBF9-4D7B-BC6B-996118DDEDA3}.Release|x64.Build.0 = Release|Any CPU
 		{5B45483D-DBF9-4D7B-BC6B-996118DDEDA3}.Release|x86.ActiveCfg = Release|Any CPU
 		{5B45483D-DBF9-4D7B-BC6B-996118DDEDA3}.Release|x86.Build.0 = Release|Any CPU
+		{93E7C598-6EF2-484D-859F-0D20D001A02B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93E7C598-6EF2-484D-859F-0D20D001A02B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93E7C598-6EF2-484D-859F-0D20D001A02B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{93E7C598-6EF2-484D-859F-0D20D001A02B}.Debug|x64.Build.0 = Debug|Any CPU
+		{93E7C598-6EF2-484D-859F-0D20D001A02B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{93E7C598-6EF2-484D-859F-0D20D001A02B}.Debug|x86.Build.0 = Debug|Any CPU
+		{93E7C598-6EF2-484D-859F-0D20D001A02B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93E7C598-6EF2-484D-859F-0D20D001A02B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93E7C598-6EF2-484D-859F-0D20D001A02B}.Release|x64.ActiveCfg = Release|Any CPU
+		{93E7C598-6EF2-484D-859F-0D20D001A02B}.Release|x64.Build.0 = Release|Any CPU
+		{93E7C598-6EF2-484D-859F-0D20D001A02B}.Release|x86.ActiveCfg = Release|Any CPU
+		{93E7C598-6EF2-484D-859F-0D20D001A02B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50C264B5-0901-41C6-ACB2-E1BDB8314651}
 	EndGlobalSection
 EndGlobal

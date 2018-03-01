@@ -36,8 +36,8 @@ namespace LightContainer.Configuration
         /// <param name="type">Registered name for class.</param>
         public ClassConfiguration(Type type, string name)
         {
-            Type = type ?? throw new ArgumentNullException("type");
-            Name = name ?? throw new ArgumentNullException("name");
+            Type = type ?? throw new ArgumentNullException(nameof(type));
+            Name = name ?? throw new ArgumentNullException(nameof(name));
 
             Constructor = new Constructor(type);
         }

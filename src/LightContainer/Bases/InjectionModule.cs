@@ -12,8 +12,8 @@ namespace LightContainer.Bases
         /// <summary>
         /// Loads dependencies into the dependency registry that is from the application context.
         /// </summary>
-        /// <param name="registry">Dependency registry for regsitering dependencies.</param>
-        public abstract void Load(IClassRegistry registry);
+        /// <param name="registrar">Dependency registry for regsitering dependencies.</param>
+        public abstract void Load(IRegistrar registrar);
 
         #endregion
     }

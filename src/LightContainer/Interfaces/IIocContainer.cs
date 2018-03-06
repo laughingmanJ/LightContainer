@@ -6,7 +6,7 @@ namespace LightContainer.Interfaces
     /// <summary>
     /// Represents an inversion of control container.  
     /// </summary>
-    public interface IIocContainer : IDisposable
+    public interface IIocContainer
     {
         #region Methods
 

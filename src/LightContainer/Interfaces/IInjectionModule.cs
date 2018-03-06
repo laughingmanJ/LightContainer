@@ -6,6 +6,6 @@ namespace LightContainer.Interfaces
 {
     public interface IInjectionModule
     {
-        void Load(IClassRegistry registry);
+        void Load(IRegistrar registrar);
     }
 }

@@ -1,14 +1,11 @@
-﻿
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace LightContainer.Interfaces
 {
-    /// <summary>
-    /// Registry of defined classes.
-    /// </summary>
-    public interface IClassRegistry
+    public interface IRegistrar 
     {
-        #region Methods
-
         void RegisterInstance<T>(T instance)
             where T : class;
 
@@ -30,7 +27,5 @@ namespace LightContainer.Interfaces
         IConstructor RegisterType<T, TR>(string name)
             where T : class
             where TR : T;
-
-        #endregion
     }
 }
